@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Language Translation"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/fromLanguageSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:padding="8dp"
+            />
+        <ImageView
+            android:id="@+id/fromTo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:src="@drawable/swap" />
+
+        <Spinner
+        android:id="@+id/toLanguageSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:spinnerMode="dropdown"
+        android:padding="8dp"
+        />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to translate"
+        android:padding="8dp"
+        android:width="150sp"
+        android:height="150sp"
+        android:background="@color/white"
+        android:shadowColor="@color/black"
+        />
+    <Button
+    android:id="@+id/translateButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Translate"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:padding="8dp"
+    />
+    <TextView
+    android:id="@+id/translated_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"  android:layout_marginTop="16dp"
+    android:padding="8dp"
+        android:width="400sp"
+        android:height="150sp"
+        android:hint="The translated text will be printed here ......"
+        android:background="@color/white"
+     />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp">
+
+    <Button
+        android:id="@+id/Voice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Voice Input"
+        android:padding="8dp"
+        />
+
+    <Button
+        android:id="@+id/Speaker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Speak Aloud"
+        android:padding="8dp"/>
+</LinearLayout>
+
+</LinearLayout>

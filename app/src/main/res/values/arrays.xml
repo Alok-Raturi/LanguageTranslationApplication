@@ -1,0 +1,28 @@
+<resources>
+    <string-array name="languages_array">
+        <item>Select Language</item>
+        <item>Arabic</item>
+        <item>Bengali</item>
+        <item>German</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Persian</item>
+        <item>French</item>
+        <item>Gujarati</item>
+        <item>Hindi</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Kannada</item>
+        <item>Korean</item>
+        <item>Marathi</item>
+        <item>Dutch</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Urdu</item>
+        <item>Chinese</item>
+    </string-array>
+</resources>
